@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s0N-bf-PtA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Rooms-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_214Practice_Compile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-6n-iqd">
+                                <rect key="frame" x="155" y="273" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Room # 1"/>
+                                <connections>
+                                    <segue destination="AT8-Ba-h3p" kind="show" id="qcZ-uS-jre"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Rooms" id="9vQ-lT-09B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="x8J-mS-aIu">
+                            <connections>
+                                <segue destination="JqZ-F4-NYC" kind="presentation" id="33P-9f-pv3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="-561"/>
+        </scene>
+        <!--Room # 1-->
+        <scene sceneID="1NX-dn-AZi">
+            <objects>
+                <viewController id="AT8-Ba-h3p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9og-uk-Sfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4A-8y-gTs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dgN-dp-A1L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Room # 1" id="QJi-F8-VJi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MU5-a2-ASb">
+                            <connections>
+                                <segue destination="R3v-PM-XUI" kind="presentation" id="K3x-jw-mbH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1J-5Z-zwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132" y="-272"/>
+        </scene>
+        <!--New Room View Controller-->
+        <scene sceneID="dq8-8J-a6w">
+            <objects>
+                <viewController id="Xyq-bR-DJC" customClass="NewRoomViewController" customModule="_214Practice_Compile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvg-ky-IIL"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Kr-JK-mIn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z6V-Lh-5ju" customClass="new">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jkk-te-ksg">
+                                <rect key="frame" x="0.0" y="18" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="New Room" id="xeU-ax-mQs">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="1ST-1d-xQC">
+                                            <connections>
+                                                <action selector="saveRoom:" destination="Xyq-bR-DJC" id="pEC-yw-x5j"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hF-He-oAO">
+                                <rect key="frame" x="0.0" y="62" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Crop" width="80" id="iCW-Vw-ENe"/>
+                                    <barButtonItem title="Door" width="80" id="1FU-3q-s0h"/>
+                                    <barButtonItem title="Furn" width="80" id="MpH-Q6-fUV">
+                                        <connections>
+                                            <segue destination="XlV-6t-YTE" kind="presentation" id="XK2-LO-IWS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Tint" width="80" id="S6h-Or-sMX"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtF-Ux-959">
+                                <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                                <color key="backgroundColor" red="0.95283776521682739" green="0.95300072431564331" blue="0.95282751321792603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="561" id="ec1-qW-cdg"/>
+                                    <constraint firstAttribute="width" constant="375" id="wle-4p-ivl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xtF-Ux-959" firstAttribute="leading" secondItem="Z6V-Lh-5ju" secondAttribute="leading" id="XeS-u0-PxD"/>
+                            <constraint firstAttribute="trailing" secondItem="xtF-Ux-959" secondAttribute="trailing" id="aXa-ld-QDn"/>
+                            <constraint firstItem="9Kr-JK-mIn" firstAttribute="top" secondItem="xtF-Ux-959" secondAttribute="bottom" id="wKR-vg-GT6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="base" destination="xtF-Ux-959" id="G79-Vp-qwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSJ-ev-igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-937.78110944527748"/>
+        </scene>
+        <!--New Furniture-->
+        <scene sceneID="g2Y-0Z-dk8">
+            <objects>
+                <viewController id="XlV-6t-YTE" customClass="NewFurniture" customModule="_214Practice_Compile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oAt-sZ-Bxt"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKM-gQ-Vww"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cad-VL-w6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Width" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFf-7l-13h">
+                                <rect key="frame" x="72" y="270" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Depth" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KyJ-xD-jZp">
+                                <rect key="frame" x="203" y="270" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-H4-5qD">
+                                <rect key="frame" x="203" y="326" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-vm-0hC">
+                                <rect key="frame" x="107" y="331" width="27" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-e5-mPp">
+                                <rect key="frame" x="61" y="327" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="decreaseLevel:" destination="XlV-6t-YTE" eventType="touchUpInside" id="6qw-pb-DPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPz-cy-b6P">
+                                <rect key="frame" x="142" y="326" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="increaseLevel:" destination="XlV-6t-YTE" eventType="touchUpInside" id="Ujr-eG-7Xe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Furniture Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOQ-do-Apd">
+                                <rect key="frame" x="72" y="181" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEz-WA-Lhh">
+                                <rect key="frame" x="72" y="219" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZW-tE-ukb">
+                                <rect key="frame" x="130" y="537" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add to the Room"/>
+                                <connections>
+                                    <action selector="addFurnitureToTheRoom:" destination="XlV-6t-YTE" eventType="touchUpInside" id="epP-2M-LIR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="furnitureColor" destination="PEz-WA-Lhh" id="6xi-u8-ROx"/>
+                        <outlet property="furnitureDepth" destination="KyJ-xD-jZp" id="ok2-ZT-20L"/>
+                        <outlet property="furnitureHeight" destination="vcv-H4-5qD" id="LbD-Qc-00V"/>
+                        <outlet property="furnitureLevel" destination="9vT-vm-0hC" id="mXf-Qb-w7G"/>
+                        <outlet property="furnitureName" destination="WOQ-do-Apd" id="KQk-r4-rfw"/>
+                        <outlet property="furnitureWidth" destination="KFf-7l-13h" id="oaU-w9-bru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exB-7v-h2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3693.5999999999999" y="-937.78110944527748"/>
+        </scene>
+        <!--Insert Room Size-->
+        <scene sceneID="Ldf-4e-Xyl">
+            <objects>
+                <viewController id="JqZ-F4-NYC" customClass="insertRoomSize" customModule="_214Practice_Compile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="acL-s6-wvi"/>
+                        <viewControllerLayoutGuide type="bottom" id="AmF-AT-Pzk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wBU-lL-Kkd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Width" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDD-Nb-hwl">
+                                <rect key="frame" x="102" y="179" width="171" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="9hl-9Q-M9V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-2k-ajD">
+                                <rect key="frame" x="102" y="217" width="171" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="KAW-Rl-r0q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us the size of your room." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sf-Lw-KpG">
+                                <rect key="frame" x="77" y="117" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TKp-tk-d4V">
+                                <rect key="frame" x="77" y="293" width="220" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="Nb7-y3-QbQ"/>
+                                    <constraint firstAttribute="width" constant="220" id="jz2-Df-f2N"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr9-6a-Ydz">
+                                <rect key="frame" x="160" y="601" width="55" height="30"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="roomSizeConfirmed:" destination="JqZ-F4-NYC" eventType="touchUpInside" id="TXl-cz-pCv"/>
+                                    <segue destination="Xyq-bR-DJC" kind="show" id="k6b-6O-6NU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PDD-Nb-hwl" firstAttribute="centerX" secondItem="wBU-lL-Kkd" secondAttribute="centerX" id="4Fe-D8-IFM"/>
+                            <constraint firstItem="ZPe-2k-ajD" firstAttribute="top" secondItem="PDD-Nb-hwl" secondAttribute="bottom" constant="8" id="BLC-gb-cKv"/>
+                            <constraint firstItem="AmF-AT-Pzk" firstAttribute="top" secondItem="Yr9-6a-Ydz" secondAttribute="bottom" constant="36" id="KUv-dR-Uvk"/>
+                            <constraint firstItem="ZPe-2k-ajD" firstAttribute="centerX" secondItem="wBU-lL-Kkd" secondAttribute="centerX" id="NVb-ul-NB5"/>
+                            <constraint firstItem="3sf-Lw-KpG" firstAttribute="top" secondItem="acL-s6-wvi" secondAttribute="bottom" constant="97" id="VLx-Va-rcX"/>
+                            <constraint firstItem="Yr9-6a-Ydz" firstAttribute="centerX" secondItem="wBU-lL-Kkd" secondAttribute="centerX" id="YRt-xB-9er"/>
+                            <constraint firstItem="PDD-Nb-hwl" firstAttribute="top" secondItem="3sf-Lw-KpG" secondAttribute="bottom" constant="41" id="Ybv-jg-MP6"/>
+                            <constraint firstItem="AmF-AT-Pzk" firstAttribute="top" secondItem="TKp-tk-d4V" secondAttribute="bottom" constant="109" id="dIC-sq-ISj"/>
+                            <constraint firstItem="3sf-Lw-KpG" firstAttribute="centerX" secondItem="wBU-lL-Kkd" secondAttribute="centerX" id="ecN-Ut-pWO"/>
+                            <constraint firstItem="TKp-tk-d4V" firstAttribute="centerX" secondItem="wBU-lL-Kkd" secondAttribute="centerX" id="fkq-5o-Grd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="roomHeight" destination="ZPe-2k-ajD" id="wVa-Yb-T7i"/>
+                        <outlet property="roomWidth" destination="PDD-Nb-hwl" id="0hp-gj-mEi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqF-64-ORx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120.8000000000002" y="-936.88155922038993"/>
+        </scene>
+        <!--Furni View Controller-->
+        <scene sceneID="aBT-Pq-ygd">
+            <objects>
+                <viewController id="R3v-PM-XUI" customClass="FurniViewController" customModule="_214Practice_Compile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P6J-Mr-YjK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ylc-YB-Jth"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3l7-6J-VZt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcD-a6-Olp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Add Furniture" id="mEP-9H-GmE">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BVA-lL-7a1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-87-tsI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="+" width="360" id="JMn-OJ-ssb"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZG-8C-6lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-272"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0tP-oF-rDe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s0N-bf-PtA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jxe-og-2cq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rcl-Yz-QYh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGV-DQ-QAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="-560.86956521739137"/>
+        </scene>
+    </scenes>
+</document>
